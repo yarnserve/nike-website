@@ -1,32 +1,110 @@
-body {
-    line-height: 1.6;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+
+:root {
+    --primary : #111;
+    --gray : #ddd;   
 }
 
-h1 {
-    font-size: 30px;
-    margin: 50px 0;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--primary);
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+/* header */
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: var(--gray); */
+}
+
+.bars {
+    display: none;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 16px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
-.nav {
+.extra {
     display: flex;
-    padding: 30px 20px;
-    align-items: center;
-    justify-content: space-between;
+    gap: 30px;
+    margin-right: 30px;
 }
 
 .gnb {
     display: flex;
 }
 
-.gnb li a {
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
     display: block;
-    padding: 10px 50px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 30px;
+}
+
+.gnb > li > a span {
+    position: relative;
+}
+
+.gnb > li > a span::after {
+    content: '';
+    position: absolute;    
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary);
+    transition: all 0.3s;
+}
+
+.gnb > li:hover a span::after {
+    width: 100%;    
+}
+
+.gnb ul {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 120px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 12px 10px;
+    display: none;
+}
+
+.gnb ul a {
+    display: block;
+    padding: 6px 0;
+}
+
+.gnb ul a:hover {
+    text-decoration: underline;
 }

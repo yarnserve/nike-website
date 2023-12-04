@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../favicon.ico">
@@ -12,14 +11,46 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 <body>
-    <div class="header"></div>
-    <h1>Nike main page</h1>
-    <div class="photo">
-        <img src="../images/hero_image.png" alt="">
+    <div class="wrap">
+        <div class="header">
+            <!-- header include -->
+        </div>
+
+        <div class="hero">
+            <div class="photo">
+                <img src="../images/hero_image.png" alt="">
+            </div>
+            <div class="text_box">
+                <h1>너만을<br>위한 나이키</h1>
+                <p>ADV 기술을 적용한 2023 나이키 축구 국가대표팀 저지를 만나 보세요.</p>
+                <a href="#">SHOP</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section_01"></div>
+            <div class="section_02"></div>
+            <div class="section_03"></div>
+            <div class="section_04"></div>
+            <div class="section_05"></div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <ul class="f_menu"></ul>
+                <div class="sns">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                <div class="copyright"></div>               
+            </div>
+        </div>
     </div>
 
     <script>
-        $('.header').load('../inc/nav.html')
+        $('.header').load('../inc/header.html')
     </script>
 </body>
 </html>
