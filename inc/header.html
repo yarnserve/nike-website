@@ -64,9 +64,11 @@
     $('.gnb > li').hover(
         function() {
             $(this).find('ul').stop().slideDown('fast')
+            $(this).find('a').addClass('on')
         },
         function() {
             $(this).find('ul').stop().slideUp('fast')
+            $(this).find('a').removeClass('on')
         }
     )
 
