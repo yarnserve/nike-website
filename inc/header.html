@@ -63,12 +63,10 @@
 <script>
     $('.gnb > li').hover(
         function() {
-            $(this).find('ul').stop().slideDown('fast')
-            $(this).find('a').addClass('on')
+            $(this).addClass('on').find('ul').stop().slideDown('fast')            
         },
         function() {
-            $(this).find('ul').stop().slideUp('fast')
-            $(this).find('a').removeClass('on')
+            $(this).removeClass('on').find('ul').stop().slideUp('fast')
         }
     )
 

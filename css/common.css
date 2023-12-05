@@ -114,6 +114,12 @@ body {
     text-decoration: underline;
 }
 
+.container {
+    width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 
 @media (max-width: 576px) {
     .header {
@@ -179,7 +185,7 @@ body {
         right: 30px;
     }
 
-    .gnb > li > a.on::after {
+    .gnb > li.on > a::after {
         content: '-';
     }
 

@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="icon" href="../favicon.ico">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -23,13 +27,38 @@
             <div class="text_box">
                 <h1>너만을<br>위한 나이키</h1>
                 <p>ADV 기술을 적용한 2023 나이키 축구 국가대표팀 저지를 만나 보세요.</p>
-                <a href="#">SHOP</a>
+                <a href="#" class="btn">SHOP</a>
             </div>
         </div>
 
         <div class="container">
-            <div class="section_01"></div>
-            <div class="section_02"></div>
+            <div class="section_01">
+                <ul class="list">
+                    <li>
+                        <h3>for Women</h3>
+                        <a href="#">Shop now <i class="xi-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <h3>for Men</h3>
+                        <a href="#">Shop now <i class="xi-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section_02">
+                <h2>New Releases</h2>
+                <div class="swiper swiper_01">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                    </div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
             <div class="section_03"></div>
             <div class="section_04"></div>
             <div class="section_05"></div>
@@ -48,9 +77,35 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        var swiper = new Swiper(".swiper_01", {});
+    </script>
 
     <script>
         $('.header').load('../inc/header.html')
+
+        ScrollReveal().reveal('.photo', {
+            rotate : {z: 20},
+            duration: 1000,
+            scale: 2,
+            easing: 'ease-in-out'
+        });
+        ScrollReveal().reveal('.text_box h1', {
+            distance: '30px',
+            origin: 'bottom',
+            delay: 600
+        });
+        ScrollReveal().reveal('.text_box p', {
+            distance: '30px',
+            origin: 'top',
+            delay: 900
+        });
+        ScrollReveal().reveal('.text_box a', {
+            distance: '300px',
+            origin: 'left',
+            delay: 1000
+        });
     </script>
 </body>
 </html>

@@ -4,7 +4,6 @@
     margin: 0 auto;
     height: 700px;
     position: relative;
-    background-color: var(--gray);
 }
 
 .hero .photo {
@@ -21,8 +20,70 @@
 
 .hero .text_box {
     position: absolute;
-    left: 0;
+    left: 20px;
     bottom: 60px;
+}
+
+.hero .text_box h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 600;    
+}
+
+.hero .text_box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0 30px;
+    width: 80%;
+}
+
+.hero .text_box .btn {
+    display: block;
+    width: 260px;
+    height: 70px;    
+    background-color: var(--primary);
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* section_01 */
+.section_01 {
+    margin-bottom: 120px;
+    color: var(--gray);
+}
+
+.section_01 .list {
+    display: flex;
+    gap: 20px;
+}
+
+.section_01 .list li {
+    width: 580px;
+    height: 580px;
+    background-color: var(--primary);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section_01 .list li h3 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.section_01 .list li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+/* section_02 */
+.swiper_01 .swiper-slide {
+    height: 300px;
 }
 
 @media (max-width: 576px) {
