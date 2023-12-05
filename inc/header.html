@@ -69,4 +69,14 @@
             $(this).find('ul').stop().slideUp('fast')
         }
     )
+
+    $('.bars').click(function() {
+        $('.gnb').toggleClass('active')
+
+        if($('.gnb').hasClass('active')) {
+            $(this).find('img').attr('src', '../images/icon_close.svg')
+        } else {
+            $(this).find('img').attr('src', '../images/icon_bars.svg')
+        }
+    })
 </script>
