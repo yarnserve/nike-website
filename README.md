@@ -2,3 +2,7 @@
 
 ### 부트스트랩 중단점
 - https://getbootstrap.kr/docs/5.0/layout/breakpoints/
+
+```
+html, body { max-width: 100%; overflow-x: hidden; }
+```
