@@ -212,6 +212,34 @@
     font-weight: 600;
 }
 
+/* section_05 */
+.section_05 {
+    margin-bottom: 120px;
+    text-align: center;    
+}
+
+.section_05 .text_box h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.section_05 .text_box p {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 44%;
+    margin: 30px auto 50px;
+}
+.section_05 .text_box .btn2 {
+    display: block;
+    width: 180px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--primary);
+    color: var(--gray);
+    margin: 0 auto;
+    line-height: 40px;
+}
+
 
 @media (max-width: 576px) {
     .hero {
@@ -267,4 +295,110 @@
         font-size: 14px;
     }
 
+    /* section_02 */
+    .section_02 {
+        margin-bottom: 360px;
+    }
+
+    .section_02 h2 {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+
+    .section_02 .arrows {
+        display: none;
+    } 
+ 
+    .swiper_01 {
+        position: absolute !important;
+        width: 140%;
+    }
+
+    .swiper_01 .thumb {
+        height: 218px;
+        width: 218px;
+    }
+
+    .swiper_01 .title_box {
+        padding: 10px 0;
+    }
+
+    .swiper_01 .title_box h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .swiper_01 .title_box p {
+        font-size: 12px;
+    }
+
+    /* section_03 */
+    .section_03 {
+        margin-bottom: 60px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section_03 .item .pic {
+        height: 210px;
+        font-size: 14px;
+    }
+
+    /* section_04 */
+    .section_04 {
+        margin-bottom: 80px;    
+    }
+
+    .section_04 h2 {
+        font-size: 20px;
+    }
+
+    .section_04 .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .section_04 .list li .thumb {
+        height: 280px;
+        background-color: var(--gray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    .section_04 .list li .title {
+        display: block;
+        padding: 20px 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* section_05 */
+    .section_05 {
+        margin-bottom: 120px;
+        text-align: center;    
+    }
+
+    .section_05 .text_box h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    .section_05 .text_box p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 44%;
+        margin: 30px auto 50px;
+    }
+    .section_05 .text_box .btn2 {
+        display: block;
+        width: 180px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: var(--primary);
+        color: var(--gray);
+        margin: 0 auto;
+        line-height: 40px;
+    }
 }
